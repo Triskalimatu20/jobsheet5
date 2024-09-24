@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PemilihanSwitch19 {
+public class ModifPemilihanSwitch19 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,6 +26,9 @@ switch (operator) {
     case ':':
         hasil = angka1 / angka2;
         break;
+        default:
+            System.err.println("Operator yang dipilih tidak sesuai.");
+            return;
     }
     System.out.println(angka1 + " " + operator + " " + angka2 + " = " + hasil);
     
